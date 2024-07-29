@@ -82,4 +82,43 @@ menampilkan data array ars yang sudah hashing(terurut)
         cout << ars[i] << " ";
     }
 
-### baris ke 
+### baris ke 62-69
+
+Menanyakan pengguna apakah mereka ingin menghapus data.
+
+Jika ya, meminta pengguna memasukkan nilai data yang ingin dihapus.
+
+Jika Tidak, maka program selesai
+
+    char type;
+    cout << "Apakah ingin menghapus data? [y/n] ";
+    cin >> type;
+    if(check(type)){
+        cout << "Data apa yang ingin dihapus? ";
+    }else{
+        return 0;
+    }
+
+### baris ke 76 - 83
+
+Menghapus data yang diminta dengan menggantinya menjadi -1 dalam array ars.
+
+Menampilkan tabel hash setelah penghapusan data.
+
+    for(int i=0; i<n; i++){
+        if(ars[i] == erase){
+            ars[i] = -1;
+            cout << ars[i] << " ";
+        }else{
+            cout << ars[i] << " ";
+        }
+    }
+## Authors
+
+- Faika
+- immanuel
+- atta
+- nabila
+- Cilla
+- viola
+
